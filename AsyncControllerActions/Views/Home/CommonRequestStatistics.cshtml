@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AsyncControllerActions.Models.RequestStatistics>
+
+@{
+    ViewBag.Title = "CommonRequestStatistics";
+}
+
+<h2>@ViewBag.SyncOrAsync (@ViewBag.Stopwatch.ElapsedMilliseconds ms)</h2>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Uri)</th>
+        <th>@Html.DisplayNameFor(model => model.StatusCode)</th>
+        <th>@Html.DisplayNameFor(model => model.ContentLength)</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>        
+        <td><a href="@Html.DisplayFor(modelItem => item.Uri)">@Html.DisplayFor(modelItem => item.Uri)</a></td>
+        <td>@Html.DisplayFor(modelItem => item.StatusCode)</td>
+        <td>@Html.DisplayFor(modelItem => item.ContentLength)</td>
+    </tr>
+}
+
+</table>
