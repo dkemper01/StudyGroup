@@ -12,6 +12,7 @@
 <table class="table">
     <tr>
         <th>@Html.DisplayNameFor(model => model.Timestamp)</th>
+        <th>@Html.DisplayNameFor(model => model.CurrencyId)</th>
         <th>@Html.DisplayNameFor(model => model.CurrencyName)</th>
         <th>@Html.DisplayNameFor(model => model.Rate)</th>
     </tr>
@@ -19,6 +20,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>@Html.DisplayFor(modelItem => item.Timestamp)</td>
+        <td>@Html.DisplayFor(modelItem => item.CurrencyId)</td>
         <td>@Html.DisplayFor(modelItem => item.CurrencyName)</td>
         <td>@Html.DisplayFor(modelItem => item.Rate)</td>
     </tr>

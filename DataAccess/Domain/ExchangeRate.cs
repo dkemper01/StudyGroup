@@ -5,10 +5,11 @@ namespace DataAccess.Domain
 {
     public class ExchangeRate
     {
-        [Key]
+        public Guid Id { get; set; }
+
         public DateTime Timestamp { get; set; }
 
-        [Key]
+        [MaxLength(3)]
         public string CurrencyId { get; set; }
 
         public string CurrencyName { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -17,10 +18,9 @@ namespace DataAccess
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<ExchangeRate>()
-                .HasKey(rate => new {rate.Timestamp, rate.CurrencyId});
-
+                .Property(rate => rate.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             modelBuilder.Entity<ExchangeRate>().Property(rate => rate.Rate).HasPrecision(19, 9);
-
         }
     }
 }
