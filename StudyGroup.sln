@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncControllerActions", "AsyncControllerActions\AsyncControllerActions.csproj", "{79A0BBF9-756F-4FF1-8158-839EBAE8ADBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{77AEFFE0-96DD-4645-9FD6-E05F5BA7E027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenExchangeRates", "OpenExchangeRates\OpenExchangeRates.csproj", "{76F29A2B-7FFF-42A5-BA53-BC7F333E781B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{79A0BBF9-756F-4FF1-8158-839EBAE8ADBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79A0BBF9-756F-4FF1-8158-839EBAE8ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79A0BBF9-756F-4FF1-8158-839EBAE8ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AEFFE0-96DD-4645-9FD6-E05F5BA7E027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AEFFE0-96DD-4645-9FD6-E05F5BA7E027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AEFFE0-96DD-4645-9FD6-E05F5BA7E027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AEFFE0-96DD-4645-9FD6-E05F5BA7E027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F29A2B-7FFF-42A5-BA53-BC7F333E781B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F29A2B-7FFF-42A5-BA53-BC7F333E781B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F29A2B-7FFF-42A5-BA53-BC7F333E781B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F29A2B-7FFF-42A5-BA53-BC7F333E781B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

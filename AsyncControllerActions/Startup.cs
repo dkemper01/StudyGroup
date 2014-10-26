@@ -8,7 +8,7 @@ namespace AsyncControllerActions
     {
         public void Configuration(IAppBuilder app)
         {
-            
+
         }
     }
 }

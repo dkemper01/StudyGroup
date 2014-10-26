@@ -1,0 +1,38 @@
+﻿@using DataAccess.Domain
+@model AsyncControllerActions.Models.RateViewModel
+
+@{
+    ViewBag.Title = "Rates";
+}
+
+<h2>Exchange Rates</h2>
+
+<p>@Html.ActionLink("Import Exchange Rates", "Import", null, new { @class = "btn btn-default btn-sm" })</p>
+
+
+@using (Html.BeginForm("Index", "ExchangeRates", FormMethod.Get, new { @class = "form-inline", role = "form" }))
+{
+    <div class="form-group">
+        <label class="sr-only" for="timestamp">Timestamp</label>
+        @Html.DropDownList("timestamp", Model.Timestamps, new { @class = "form-control"})
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+<br/>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Rate</th>
+    </tr>
+       
+    @foreach (ExchangeRate item in Model.Rates) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.CurrencyId)</td>
+            <td>@Html.ActionLink(item.CurrencyName, "Detail", new { id = item.CurrencyId })</td>
+            <td>@Html.DisplayFor(modelItem => item.Rate)</td>
+        </tr>
+    }
+</table>
