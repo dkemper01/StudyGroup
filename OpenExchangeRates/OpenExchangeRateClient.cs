@@ -13,11 +13,17 @@ namespace OpenExchangeRates
         private readonly string _appId;
         private HttpClient _client;
 
+        private const string ApiKeyRequiredMessage = "An API key is required to use the Open Exchange Rates API. You can signup for a free API key at https://openexchangerates.org/signup.";
+
         public OpenExchangeRateClient() : this(null) { }
 
         public OpenExchangeRateClient(string appId)
         {
             _appId = appId ?? ConfigurationManager.AppSettings["OpenExchangeRatesApiKey"];
+            if (string.IsNullOrEmpty(_appId))
+            {
+                throw new ArgumentException(ApiKeyRequiredMessage, "appId");
+            }
 
             _client = new HttpClient()
             {
@@ -28,6 +34,8 @@ namespace OpenExchangeRates
         public async Task<ReadOnlyDictionary<string, string>> GetCurrencies()
         {
             var response = await _client.GetAsync("currencies.json");
+            response.EnsureSuccessStatusCode();
+
             string json = await response.Content.ReadAsStringAsync();
 
             var obj = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
@@ -39,6 +47,7 @@ namespace OpenExchangeRates
         {
             var url = "latest.json?app_id={0}";
             var response = await _client.GetAsync(string.Format(url, _appId));
+            response.EnsureSuccessStatusCode();
 
             string json = await response.Content.ReadAsStringAsync();
             var obj = JsonConvert.DeserializeObject<FxRates>(json);
@@ -51,6 +60,7 @@ namespace OpenExchangeRates
 
             var url = string.Format("historical/{0}.json?app_id={1}", date.ToString("yyyy-MM-dd"), _appId);
             var response = await _client.GetAsync(string.Format(url, _appId));
+            response.EnsureSuccessStatusCode();
 
             string json = await response.Content.ReadAsStringAsync();
             var obj = JsonConvert.DeserializeObject<FxRates>(json);
