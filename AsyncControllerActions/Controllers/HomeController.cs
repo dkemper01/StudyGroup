@@ -25,9 +25,7 @@ namespace AsyncControllerActions.Controllers
                 RequestStatistics.Create(client.GetAsync("http://www.microsoft.com").Result),
                 RequestStatistics.Create(client.GetAsync("http://www.yahoo.com").Result),
                 RequestStatistics.Create(client.GetAsync("http://www.google.com").Result),
-                RequestStatistics.Create(client.GetAsync("http://www.msn.com").Result),
-                RequestStatistics.Create(client.GetAsync("http://www.thomsonreuters.com").Result),
-                RequestStatistics.Create(client.GetAsync("http://www.serengetilaw.com").Result)
+                RequestStatistics.Create(client.GetAsync("http://www.msn.com").Result)
             };
 
             ViewBag.SyncOrAsync = "Synchronous";
