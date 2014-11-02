@@ -16,6 +16,7 @@ Code samples for a MS 70-486 study group with my co-workers.
 
 ### Azure
 
+* [Channel 9 - Azure Cloud Services Tutorials](http://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials)
 * [Web Roles, Worker Roles](http://blogs.msdn.com/b/brunoterkaly/archive/2012/05/13/essential-windows-azure-microsoft-cloud-knowledge-part-1-web-roles-worker-roles.aspx)
 * [Websites vs Cloud Services](http://blogs.msdn.com/b/cdndevs/archive/2013/11/21/windows-azure-websites-vs-cloud-services.aspx)
 
