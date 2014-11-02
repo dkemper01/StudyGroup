@@ -10,10 +10,24 @@ Code samples for a MS 70-486 study group with my co-workers.
 * [Born to Learn Study Guide](http://borntolearn.mslearn.net/certification/developer/w/wiki/536.486-developing-asp-net-4-5-mvc-web-applications.aspx)
 * [Blogged By Chris Study Guide](http://www.bloggedbychris.com/2012/11/06/microsoft-exam-70-486-study-guide/)
 
+### .NET
 
-## Links to specific topics
 * [Introduction to Async/Await on ASP.NET](http://msdn.microsoft.com/en-us/magazine/dn802603.aspx)
+
+### Azure
+
+* [Web Roles, Worker Roles](http://blogs.msdn.com/b/brunoterkaly/archive/2012/05/13/essential-windows-azure-microsoft-cloud-knowledge-part-1-web-roles-worker-roles.aspx)
+* [Websites vs Cloud Services](http://blogs.msdn.com/b/cdndevs/archive/2013/11/21/windows-azure-websites-vs-cloud-services.aspx)
+
+### Entity Framework
+
+* [ASP.NET - Entity Framework](http://www.asp.net/entity-framework)
 * [Getting Started with Entity Framework 6 Code First using MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 
+### MVC
 
+* [ASP.NET - MVC](http://www.asp.net/mvc)
 
+### Web API
+
+* [ASP.NET - Web API](http://www.asp.net/web-api)
