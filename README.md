@@ -19,6 +19,9 @@ Code samples for a MS 70-486 study group with my co-workers.
 * [Channel 9 - Azure Cloud Services Tutorials](http://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials)
 * [Web Roles, Worker Roles](http://blogs.msdn.com/b/brunoterkaly/archive/2012/05/13/essential-windows-azure-microsoft-cloud-knowledge-part-1-web-roles-worker-roles.aspx)
 * [Websites vs Cloud Services](http://blogs.msdn.com/b/cdndevs/archive/2013/11/21/windows-azure-websites-vs-cloud-services.aspx)
+* [Migrate and Publish to Azure Cloud Services](http://msdn.microsoft.com/en-us/library/azure/hh420322.aspx)
+* [Run Startup Tasks in Azure](https://github.com/jrotello/StudyGroup/edit/master/README.md)
+* [Use Local Storage to Store Files During Startup](http://msdn.microsoft.com/en-us/library/azure/hh974419.aspx)
 
 ### Entity Framework
 
