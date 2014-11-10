@@ -28,10 +28,19 @@ Code samples for a MS 70-486 study group with my co-workers.
 * [ASP.NET - Entity Framework](http://www.asp.net/entity-framework)
 * [Getting Started with Entity Framework 6 Code First using MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 
+### ASP.NET
+
+* [ASP.NET sessionState Element](http://msdn.microsoft.com/en-us/library/h6bb9cz9(v=vs.100).aspx)
+
 ### MVC
 
 * [ASP.NET - MVC](http://www.asp.net/mvc)
+* [Bootstrap CSS](http://getbootstrap.com/)
 
 ### Web API
 
 * [ASP.NET - Web API](http://www.asp.net/web-api)
+
+### Miscellaneous
+
+* [Connection Strings](http://www.connectionstrings.com/)

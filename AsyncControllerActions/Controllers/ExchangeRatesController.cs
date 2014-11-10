@@ -88,5 +88,27 @@ namespace AsyncControllerActions.Controllers
             }
         }
 
+        public void Watch(string id)
+        {
+            Session["CurrencyId"] = id;           
+        }
+
+        public PartialViewResult WatchSummary(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return PartialView("_WatchSummary", null);
+            }
+
+            using (var db = new DatabaseContext())
+            {
+                var rate = db.ExchangeRates
+                    .Where(fx => fx.CurrencyId == id)
+                    .OrderByDescending(fx => fx.Timestamp)
+                    .FirstOrDefault();
+
+                return PartialView("_WatchSummary", rate);
+            }            
+        }
     }
 }

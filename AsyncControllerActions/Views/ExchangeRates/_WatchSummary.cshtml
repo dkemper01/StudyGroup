@@ -1,0 +1,21 @@
+﻿@model DataAccess.Domain.ExchangeRate
+           
+@if (Model == null)
+{
+    <div class="alert alert-warning" role="alert">
+        Currency information unavailable.    
+    </div>
+    
+    return;
+}
+
+
+
+<h5>
+    @Html.ActionLink(@Model.CurrencyName, "Detail", "ExchangeRates", new { id = @Model.CurrencyId }, null)
+    <span class="label label-default">@Model.CurrencyId</span>
+</h5>
+<p>
+    @Html.DisplayFor(fx => fx.Rate) @@ @Model.Timestamp.ToLocalTime()
+</p>
+    

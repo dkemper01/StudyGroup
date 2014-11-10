@@ -182,6 +182,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\wait.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -223,6 +224,7 @@
     <Content Include="Views\Home\CommonRequestStatistics.cshtml" />
     <Content Include="Views\ExchangeRates\Index.cshtml" />
     <Content Include="Views\ExchangeRates\Detail.cshtml" />
+    <Content Include="Views\ExchangeRates\_WatchSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

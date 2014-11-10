@@ -26,13 +26,33 @@
         <th>Id</th>
         <th>Name</th>
         <th>Rate</th>
+        <th></th>
     </tr>
        
     @foreach (ExchangeRate item in Model.Rates) {
-        <tr>
+        <tr data-currencyid="@item.CurrencyId" data-currencyname="@item.CurrencyName">
             <td>@Html.DisplayFor(modelItem => item.CurrencyId)</td>
             <td>@Html.ActionLink(item.CurrencyName, "Detail", new { id = item.CurrencyId })</td>
             <td>@Html.DisplayFor(modelItem => item.Rate)</td>
+            <td><button class="btn btn-primary btn-sm btn-watch">Watch</button></td>
         </tr>
     }
 </table>
+
+@section scripts {
+    <script>
+    $(document).ready(function () {
+        $('table').on('click', 'button.btn-watch', function () {
+            var currencyId = $(this).closest('tr').data('currencyid');
+            var currencyName = $(this).closest('tr').data('currencyname');
+            var url = '/ExchangeRates/Watch/' + currencyId;
+            $.post(url, null, function() {
+                alert('Watching ' + currencyName + ' (' + currencyId + ')');
+            });
+
+            localStorage.setItem("currencyId", currencyId);
+            sessionStorage.setItem("currencyId", currencyId);
+        });
+    });
+    </script>
+}
