@@ -168,9 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ExchangeRatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="CurrencyHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InfoHandler.cs" />
     <Compile Include="Infrastructure\MeasureElapsedAttribute.cs" />
     <Compile Include="Models\RateViewModel.cs" />
     <Compile Include="Models\RequestStatistics.cs" />
