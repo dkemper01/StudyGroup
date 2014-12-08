@@ -13,6 +13,9 @@ namespace DataAccess
     {
         public DbSet<ExchangeRate> ExchangeRates { get; set; }
 
+        public DatabaseContext() : base("DefaultConnection")
+        { }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

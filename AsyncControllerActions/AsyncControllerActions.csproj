@@ -184,6 +184,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\AsyncControllerActions.mdf" />
+    <Content Include="App_Data\AsyncControllerActions_log.ldf">
+      <DependentUpon>AsyncControllerActions.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -235,9 +239,7 @@
     <Content Include="Views\ExchangeRates\Detail.cshtml" />
     <Content Include="Views\ExchangeRates\_WatchSummary.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
